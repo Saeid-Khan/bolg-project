@@ -1,0 +1,429 @@
+/* reset code and common code start here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4 ;
+    margin: auto;
+}
+.text-white{
+    color: #fff;
+}
+.justify{
+    text-align: justify;
+}
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+} 
+.section-center{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn{
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    letter-spacing: 0.1rem;
+
+}
+/* reset code and common code end here  */
+/* header start  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+.logo-figure{
+    border: 1px solid #fff;
+}
+.logo{
+    font-size: 4rem;
+}
+#menu-icon{
+    display: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem;
+    transition: all 0.4s;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: blue;
+    border-radius: 1rem;
+    display: inline-block;
+}
+/* header end  */
+/* banner start here  */
+#banner-section{
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+#banner-section aside{
+    flex-basis: 50%;
+    text-align: right;
+}
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+.banner-disc{
+    font-size: 1.8rem;
+}
+.banner-image{
+    width: 47rem;
+    height: 47rem;
+    border: 0.3rem solid;
+}
+/* banner end here  */
+/* about section start  */
+#about-section {
+    background-color: #4c4c4c;
+    /* min-height: 95vh; */
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color:#a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-header{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card-disc{
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 0.4rem 0;
+    margin-bottom: 2rem;
+}
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+/* about section end  */
+/* archives section start  */
+.archive-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+.archive-container-lists{
+    display: flex;
+    text-align: center;
+}
+.archive-container-list{
+    margin: 2rem;
+}
+.archive-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.4s;
+}
+.archive-image:hover{
+    transform: scale(1.1);
+}
+
+/* archives section end  */
+/* blog posts section start  */
+.blog-posts-heading{
+    margin-bottom: 2rem;
+}
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+}
+.blog-post:hover{
+    transform: scale(1.1);
+}
+.blog-aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    margin-left: 2rem;
+}
+.blog-heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.blog-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+.blog-disc{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.blog-btn{
+    width: 30%;
+}
+.blog-image{
+    width: 100%;
+    height: 100%;
+}
+/* blog posts section end  */
+/* contact section start  */
+#contact-section{
+    background-color: #4c4c4c;
+    min-height: 90vh;
+}
+#form-contact{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 2rem 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    flex: 0.3;
+    font-size: 2rem;
+}
+.form-control input, textarea{
+    flex: 0.7;
+    font-size: 1.6rem;
+    width: 40rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    resize: none;
+}
+.form-control textarea{
+    height: 15vh;
+    resize: none;
+}
+.contact-btn{
+    width: 30%;
+}
+.form-control-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact section end  */
+/* footer start  */
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    padding: 1rem;
+}
+.Copyright-text{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer-icon{
+    font-size: 2.5rem;
+    padding: 0.3rem;
+}
+/* footer end  */
+
+
+
+
+/* responsive start here  */
+@media (max-width:992px){
+    #banner-section{
+        flex-direction: column;
+    }
+    #banner-section article{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .card-container{
+        width: 60%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 56%;
+    }
+    #banner-section article{
+        width: 80%;
+    }
+    #banner-section{
+        padding: 4rem 1rem;
+        min-height: auto;
+    }
+    .card-container{
+        width: 80%;
+    }
+    #archive-section{
+        min-height: auto;
+    }
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+    #contact-section{
+        min-height: auto;
+    }
+
+    
+}
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo-figure{
+        margin-bottom: 2rem;
+    }
+    #menu-icon{
+        display: block;
+    }
+    
+    nav ul{
+        padding-left: 3rem;
+        margin-top: 1rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        padding: 0.5rem;
+    }
+    .hidden{
+        display: none;
+    }
+    #banner-section{
+        min-height: auto;
+    }
+    #banner-section article{
+        width: 90%;
+    }
+    .banner-image{
+        max-width: 100%;
+    }
+    #about-section{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .archive-container-lists{
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        width: 90%;
+    }
+    .contact-form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    .form-control input, textarea{
+       max-width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #footerbar{
+        display: flex;
+        padding: 0.5rem;
+
+    }
+}
+@media (max-width:400px){
+    
+}
+/* responsive start here  */
